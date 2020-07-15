@@ -87,11 +87,11 @@ static RgaFormat rga_fmt_map(MppFrameFormat fmt)
     case MPP_FMT_RGB565:
         ret = RGA_FMT_RGB_565;
         break;
-    case MPP_FMT_RGB888:
-        ret = RGA_FMT_RGB_888;
-        break;
-    case MPP_FMT_ARGB8888:
+    case MPP_FMT_BGRA8888:
         ret = RGA_FMT_RGBA_8888;
+        break;
+    case MPP_FMT_RGBA8888:
+        ret = RGA_FMT_BGRA_8888;
         break;
     default:
         ret = RGA_FMT_BUTT;
